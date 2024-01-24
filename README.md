@@ -86,7 +86,7 @@ sudo apt update
 
 sudo apt install zabbix-agent
 
-sudo sed -i 's/Server=127.0.0.1/Server=10.129.0.9'/g' /etc/zabbix/zabbix_server.conf
+sudo sed -i 's/Server=127.0.0.1/Server=10.129.0.9'/g' /etc/zabbix/zabbix_agentd.conf
 
 sudo systemctl restart zabbix-agent 
 sudo systemctl enable zabbix-agent
